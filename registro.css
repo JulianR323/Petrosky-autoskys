@@ -47,7 +47,7 @@ body {
     margin-top: 30px;
     margin-bottom: 25px;
 }
-.simbolosena {
+.simbolologo {
     background-image:url(imagenes/logo.jpg);
     background-size: cover;
     width: 150px;
@@ -160,7 +160,7 @@ form {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .simbolosena {
+    .simbolologo {
         width: 120px;
         height: 110px;
     }
