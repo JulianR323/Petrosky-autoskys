@@ -1,4 +1,4 @@
-/* --- CONFIGURACIÓN GENERAL --- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +14,6 @@ body {
   min-height: 100vh;
 }
 
-/* --- ENCABEZADO / NAVBAR --- */
 .encabezado {
   display: flex;
   align-items: center;
@@ -112,7 +111,7 @@ body {
   background-color: #333;
 }
 
-/* --- CONTENIDO PRINCIPAL --- */
+
 .contenido-principal {
   flex: 1;
   max-width: 1200px;
@@ -130,7 +129,7 @@ body {
   text-transform: uppercase;
 }
 
-/* --- GRILLA DE VEHÍCULOS --- */
+
 .grilla-vehiculos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -138,7 +137,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* --- TARJETA DE VEHÍCULO --- */
+
 .tarjeta-vehiculo {
   background-color: #f7f4ee;
   border: 1px solid #b8a286;
@@ -172,7 +171,7 @@ body {
   color: #1a1a1a;
 }
 
-/* Detalles (Year, Precio, Kilometraje) */
+
 .detalles-vehiculo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -204,7 +203,7 @@ body {
   margin-top: 2px;
 }
 
-/* Etiqueta Vendedor */
+
 .etiqueta-vendedor {
   background-color: #8c7355;
   color: #ffffff;
@@ -215,7 +214,7 @@ body {
   display: inline-block;
 }
 
-/* Botones Acción (Ver Vehículo & Comparar) */
+
 .acciones-tarjeta {
   display: flex;
   gap: 8px;
@@ -256,7 +255,7 @@ body {
   background-color: #f0e6f2;
 }
 
-/* --- PIE DE PÁGINA --- */
+
 .pie-pagina {
   border-top: 1px solid #c8c2b5;
   display: flex;
@@ -288,7 +287,7 @@ body {
   font-size: 0.85rem;
 }
 
-/* ADAPTABILIDAD RESPONSIVA */
+
 @media (max-width: 1024px) {
   .grilla-vehiculos {
     grid-template-columns: repeat(2, 1fr);

@@ -6,7 +6,7 @@ botonesComparar.forEach((boton) => {
     const tarjeta = this.closest('.tarjeta-vehiculo');
     const nombreAuto = tarjeta.querySelector('.nombre-vehiculo').innerText;
     
-    // Cambiar estado visual del botón al hacer clic
+    
     if (this.innerText === 'Comparar') {
       this.innerText = 'Añadido';
       this.style.backgroundColor = '#2b1130';
