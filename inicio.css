@@ -2,7 +2,7 @@
 body { margin: 0; font-family: Arial, sans-serif; background: #fff; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
 .cuadro { width: 360px; padding: 20px; border: 2px solid #ddd; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); background: #fff; }
 .sena { text-align: center; margin: 20px 0; }
-.simbolosena { background: url(imagenes/logo.jpg) no-repeat center/cover; width: 150px; height: 200px; display: inline-block; }
+.simbolologo { background: url(imagenes/logo.jpg) no-repeat center/cover; width: 150px; height: 200px; display: inline-block; }
 form { width: 100%; }
 .textoformulario { display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px; }
 .campo { width: 100%; height: 42px; border: 1px solid #ccc; border-radius: 10px; display: flex; align-items: center; padding-left: 10px; margin-bottom: 15px; }
@@ -27,7 +27,7 @@ form { width: 100%; }
     .sena {
         margin: 10px 0 20px;
     }
-    .simbolosena {
+    .simbolologo {
         width: 120px;
         height: 110px;
     }
