@@ -12,14 +12,13 @@
   
   <header class="encabezado">
     <div class="logo">
-      
       <img src="imagenes/logo.jpg" alt="Petrosky Autoski Logo">
       <span class="logo-texto">PETROSKY<br><small>AUTOSKI</small></span>
     </div>
 
     <div class="barra-busqueda">
       <span class="icono-buscar">&#128065;</span>
-      <input type="text" id="campo-busqueda" placeholder="Buscar vehículos, marcas, modelos...">
+      <input type="text" id="campo-busqueda" placeholder="Buscar vehículos, marcas, modelos, talleres...">
     </div>
 
     <nav class="navegacion">
@@ -27,26 +26,219 @@
       <a href="#" class="enlace-nav">VENDE/CAMBIA</a>
       <a href="#" class="enlace-nav">CONTÁCTANOS</a>
       <a href="inicio.html" class="boton-iniciar-sesion">INICIAR SESIÓN</a>
-<a href="registro.html" class="boton-registrarse">REGISTRARSE</a>
+      <a href="registro.html" class="boton-registrarse">REGISTRARSE</a>
     </nav>
-<div class="menu-hamburguesa">
+
+    <div class="menu-hamburguesa">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </header>
 
-<main class="contenido-principal">
+
+  <main class="contenido-principal">
     <h1 class="titulo-principal">MI CUENTA</h1>
 
-   
-<div class="A1">A</div>
+    <div class="grid-panel-cuenta">
 
 
+      <section class="seccion-datos-personales">
+        <h2 class="subtitulo-seccion">DATOS PERSONALES</h2>
+        <div class="tarjeta-perfil">
+          <div class="avatar-contenedor">
+            <img src="ING-IMG/user.png" alt="Avatar Perfil" class="imagen-avatar">
+          </div>
+          <form class="formulario-datos">
+            <div class="campo-formulario">
+              <label for="nombre">Nombre</label>
+              <div class="input-contenedor">
+                <input type="text" id="nombre" name="nombre" value="">
+                <span class="icono-editar">&#9998;</span>
+              </div>
+            </div>
+
+            <div class="campo-formulario">
+              <label for="email">Email</label>
+              <div class="input-contenedor">
+                <input type="email" id="email" name="email" value="petrosky@eplston.com">
+                <span class="icono-editar">&#9998;</span>
+              </div>
+            </div>
+
+            <div class="campo-formulario">
+              <label for="telefono">Teléfono</label>
+              <div class="input-contenedor">
+                <input type="tel" id="telefono" name="telefono" value="+57 203 4567">
+                <span class="icono-editar">&#9998;</span>
+              </div>
+            </div>
+
+            <div class="campo-formulario">
+              <label for="direccion">Dirección</label>
+              <div class="input-contenedor">
+                <input type="text" id="direccion" name="direccion" value="">
+                <span class="icono-editar">&#9998;</span>
+              </div>
+            </div>
+
+            <div class="acciones-formulario">
+              <button type="submit" class="btn-guardar">GUARDAR CAMBIOS</button>
+              <button type="button" class="btn-editar-perfil">EDITAR PERFIL</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+      <section class="seccion-tarjetas-top">
+        <div class="grid-vehiculos">
+          
+      
+          <article class="tarjeta-vehiculo">
+            <div class="imagen-vehiculo-wrapper">
+              <img src="imagenes/toyota-rav4.jpg" alt="2018 Toyota RAV4">
+              <button class="btn-corazon" aria-label="Favorito">&#9825;</button>
+            </div>
+            <div class="info-vehiculo">
+              <h3 class="nombre-vehiculo">2018 Toyota RAV4</h3>
+              <div class="especificaciones">
+                <div class="col-espec"><span>Year</span><strong>2018</strong></div>
+                <div class="col-espec"><span>Precio</span><strong>$24.900</strong></div>
+                <div class="col-espec"><span>Kilometraje</span><strong>72.000 km</strong></div>
+              </div>
+              <span class="badge-vendedor">Vendedor: Particular</span>
+              <div class="acciones-tarjeta">
+                <a href="#" class="btn-ver-vehiculo">Ver vehículo</a>
+                <a href="#" class="btn-comparar">Comparar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-vehiculo">
+            <div class="imagen-vehiculo-wrapper">
+              <img src="imagenes/golf-gti.jpg" alt="2021 Volkswagen Golf GTI">
+              <button class="btn-corazon" aria-label="Favorito">&#9825;</button>
+            </div>
+            <div class="info-vehiculo">
+              <h3 class="nombre-vehiculo">2021 Volkswagen Golf GTI</h3>
+              <div class="especificaciones">
+                <div class="col-espec"><span>Year</span><strong>2021</strong></div>
+                <div class="col-espec"><span>Precio</span><strong>$31.500</strong></div>
+                <div class="col-espec"><span>Kilometraje</span><strong>31.000 km</strong></div>
+              </div>
+              <span class="badge-vendedor">Vendedor: Particular</span>
+              <div class="acciones-tarjeta">
+                <a href="#" class="btn-ver-vehiculo">Ver vehículo</a>
+                <a href="#" class="btn-comparar">Comparar</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+
+      <section class="seccion-favoritos">
+        <h2 class="subtitulo-seccion">VEHÍCULOS FAVORITOS</h2>
+        <div class="contenedor-favoritos-box">
+          <div class="grid-vehiculos">
+            
+            <!-- Tarjeta 1 Favorito -->
+            <article class="tarjeta-vehiculo">
+              <div class="imagen-vehiculo-wrapper">
+                <img src="imagenes/toyota-rav4.jpg" alt="2018 Toyota RAV4">
+                <button class="btn-corazon activo" aria-label="Favorito">&#9829;</button>
+              </div>
+              <div class="info-vehiculo">
+                <h3 class="nombre-vehiculo">2018 Toyota RAV4</h3>
+                <div class="especificaciones">
+                  <div class="col-espec"><span>Year</span><strong>2018</strong></div>
+                  <div class="col-espec"><span>Precio</span><strong>$24.900</strong></div>
+                  <div class="col-espec"><span>Kilometraje</span><strong>72.000 km</strong></div>
+                </div>
+                <span class="badge-vendedor">Vendedor: Particular</span>
+                <div class="acciones-tarjeta">
+                  <a href="#" class="btn-ver-vehiculo">Ver vehículo</a>
+                  <a href="#" class="btn-comparar">Comparar</a>
+                </div>
+              </div>
+            </article>
+
+            
+            <article class="tarjeta-vehiculo">
+              <div class="imagen-vehiculo-wrapper">
+                <img src="imagenes/golf-gti.jpg" alt="2021 Volkswagen Golf GTI">
+                <button class="btn-corazon activo" aria-label="Favorito">&#9829;</button>
+              </div>
+              <div class="info-vehiculo">
+                <h3 class="nombre-vehiculo">2021 Volkswagen Golf GTI</h3>
+                <div class="especificaciones">
+                  <div class="col-espec"><span>Year</span><strong>2021</strong></div>
+                  <div class="col-espec"><span>Precio</span><strong>$31.500</strong></div>
+                  <div class="col-espec"><span>Kilometraje</span><strong>31.000 km</strong></div>
+                </div>
+                <span class="badge-vendedor">Vendedor: Particular</span>
+                <div class="acciones-tarjeta">
+                  <a href="#" class="btn-ver-vehiculo">Ver vehículo</a>
+                  <a href="#" class="btn-comparar">Comparar</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Bloque 4: Contactos Realizados (Inferior Derecha) -->
+      <section class="seccion-contactos">
+        <h2 class="subtitulo-seccion">CONTACTOS REALIZADOS</h2>
+        <div class="lista-contactos">
+          
+          <!-- Item Contacto 1 -->
+          <div class="item-contacto">
+            <img src="imagenes/lamborghini.jpg" alt="Lamborghini" class="thumb-contacto">
+            <div class="detalles-contacto">
+              <h4>Lamborghini</h4>
+              <p>Fecha de contacto 2021</p>
+            </div>
+            <span class="badge-estado respondido">Respondido</span>
+            <a href="#" class="btn-conversacion">VER CONVERSACIÓN</a>
+          </div>
+
+          <!-- Item Contacto 2 -->
+          <div class="item-contacto">
+            <img src="imagenes/bentley.jpg" alt="Bentley Bentime" class="thumb-contacto">
+            <div class="detalles-contacto">
+              <h4>Bentley Bentime</h4>
+              <p>Fecha de contacto 2022</p>
+            </div>
+            <span class="badge-estado leido">Leído</span>
+            <a href="#" class="btn-conversacion">VER CONVERSACIÓN</a>
+          </div>
+
+          <!-- Item Contacto 3 -->
+          <div class="item-contacto">
+            <img src="imagenes/taller.jpg" alt="Taller Punn 'Talleres'" class="thumb-contacto">
+            <div class="detalles-contacto">
+              <h4>Taller Punn 'Talleres'</h4>
+              <p>Fecha de contacto 2022</p>
+            </div>
+            <span class="badge-estado leido">Leído</span>
+            <a href="#" class="btn-conversacion">VER CONVERSACIÓN</a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Pie de página -->
   <footer class="pie-pagina">
     <div class="info-derechos">
       <strong>Petrosky Autoski</strong>
-      <p>© 2026 Petrosky Autoski</p>
+      <p>© 2026 All Petrosky Autoski</p>
     </div>
     <nav class="enlaces-pie">
       <a href="#">Talleres</a>
