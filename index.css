@@ -1,4 +1,4 @@
-/* --- CONFIGURACIÓN GENERAL --- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,14 +7,14 @@
 }
 
 body {
-  background-color: #f5f2eb; /* Fondo crema muy suave similar al prototipo */
+  background-color: #f5f2eb; 
   color: #1a1a1a;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* --- ENCABEZADO --- */
+
 .encabezado {
   display: flex;
   align-items: center;
@@ -113,7 +113,7 @@ body {
   background-color: #333;
 }
 
-/* --- CONTENIDO PRINCIPAL --- */
+
 .contenido-principal {
   flex: 1;
   max-width: 1200px;
@@ -129,7 +129,7 @@ body {
   font-weight: normal;
 }
 
-/* --- GALERÍA Y TARJETAS --- */
+
 .galeria-autos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -166,7 +166,7 @@ body {
   font-weight: 600;
 }
 
-/* --- SECCIÓN BOTÓN VER MÁS --- */
+
 .contenedor-ver-mas {
   background: linear-gradient(180deg, #96724a 0%, #5d4224 100%);
   padding: 20px;
@@ -187,7 +187,7 @@ body {
   cursor: pointer;
 }
 
-/* --- PIE DE PÁGINA --- */
+
 .pie-pagina {
   border-top: 1px solid #c8c2b5;
   display: flex;
@@ -219,7 +219,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* RESPONSIVO (Dispositivos Móviles) */
+
 @media (max-width: 900px) {
   .galeria-autos {
     grid-template-columns: repeat(2, 1fr);
